@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { CursosService } from './cursos.service';
 import { CursosRoutingModule } from './cursos-routing.module';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,7 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [CursosComponent],
-  imports: [CommonModule, RouterModule, CursosRoutingModule],
+  imports: [CommonModule, RouterModule, CursosRoutingModule, SharedModule],
   providers: [CursosService],
 })
 export class CursosModule {}

@@ -1,10 +1,11 @@
+import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
-  BreadcrumbItemComponent,
   BreadcrumbModule,
   ButtonModule,
+  CardModule,
   CheckboxModule,
   FormModule,
   IconModule,
