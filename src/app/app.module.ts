@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import {
+  BreadcrumbItemComponent,
+  BreadcrumbModule,
   ButtonModule,
   CheckboxModule,
   FormModule,
@@ -12,15 +15,27 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './template/nav/nav.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './template/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './layout/nav/nav.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { LoginComponent } from './components/login/login.component';
+import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HomeComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    NavComponent,
+    HomeComponent,
+    ContatoComponent,
+    LoginComponent,
+    BreadcrumbComponent,
+  ],
   imports: [
     AppRoutingModule,
     BrowserModule,
+    RouterModule,
     ButtonModule,
     IconModule,
     FormModule,
@@ -28,6 +43,7 @@ import { HeaderComponent } from './template/header/header.component';
     CheckboxModule,
     LabelModule,
     RadioModule,
+    BreadcrumbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
