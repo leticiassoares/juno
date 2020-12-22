@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="form">
+        <com-form [formGroup]="curso">
+            <com-form-section block formTitle="Criar Curso">
+            <com-input style="width: 100%" label="Nome do curso" formControlName="nome"></com-input>
+            <com-input style="width: 100%" type="number" label="Código do curso" formControlName="codigo"></com-input>
+            <com-select
+            style="width: 100%"
+            label="Disciplina"
+            formControlName="disciplina"
+            >
+            </com-select>
+            <com-input style="width: 100%" type="number" label="Código CNPQ" formControlName="codigoCnpq"></com-input>
+            <com-textarea style="width: 100%" maxlength="100" placeholder="Digite o Texto" label="Descrição" cols="100" rows="1" formControlName="descricao"></com-textarea>
+            <com-select
+            style="width: 100%"
+            label="Carga horária"
+            formControlName="cargaHoraria"
+            >
+            </com-select>
+            </com-form-section>
+        </com-form>
+        <div class="buttons">
+            <com-button type="submit" (click)="onSubmit()">
+                <ng-container slot="text">Criar</ng-container>
+            </com-button>
+            <com-button flat (click)="onCancel()">
+                <ng-container slot="text">Cancelar</ng-container>
+            </com-button>
+        </div>
+    </div>
+  </div>

@@ -1,17 +1,17 @@
-import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   BreadcrumbModule,
   ButtonModule,
-  CardModule,
   CheckboxModule,
   FormModule,
   IconModule,
   InputModule,
   LabelModule,
   RadioModule,
+  SelectModule,
+  TextareaModule,
 } from '@cca-fab/cca-fab-components-common';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +21,6 @@ import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { LoginComponent } from './components/login/login.component';
-import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component';
     NavComponent,
     HomeComponent,
     ContatoComponent,
-    LoginComponent,
-    BreadcrumbComponent,
+    LoginComponent  
   ],
   imports: [
     AppRoutingModule,
@@ -42,6 +40,9 @@ import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component';
     FormModule,
     InputModule,
     CheckboxModule,
+    SelectModule,
+    RadioModule,
+    TextareaModule,
     LabelModule,
     RadioModule,
     BreadcrumbModule,

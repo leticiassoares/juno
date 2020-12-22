@@ -5,8 +5,11 @@
       text-transform: uppercase;
       margin: 0 0 0 3rem;
     }
+    a {
+      color: var(--lighter-grey);
+    }
     a:hover {
-      color: #b28836;
+      color: var(--light-grey);
     }
   }
 }

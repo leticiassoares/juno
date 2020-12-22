@@ -1,3 +1,4 @@
+import { LoginComponent } from './components/login/login.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,14 +15,13 @@ const routes: Routes = [
     component: ContatoComponent,
   },
   {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
     path: 'cursos',
     loadChildren: () =>
       import('./components/cursos/cursos.module').then((m) => m.CursosModule),
-  },
-  {
-    path: 'login',
-    loadChildren: () =>
-      import('./components/login/login.module').then((m) => m.LoginModule),
   },
 ];
 

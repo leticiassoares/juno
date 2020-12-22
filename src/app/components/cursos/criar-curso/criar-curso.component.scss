@@ -7,7 +7,12 @@
     width: 60%;
   }
 
-  .button {
+  .buttons {
     margin-top: 2rem;
+    display: inline-flex;
+
+    com-button {
+      margin-right: 1rem;
+    }
   }
 }
