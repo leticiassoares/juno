@@ -1,0 +1,18 @@
+.container {
+  padding: 3rem 6rem 3rem 6rem;
+  display: flex;
+  justify-content: center;
+
+  .form {
+    width: 60%;
+  }
+
+  .buttons {
+    margin-top: 2rem;
+    display: inline-flex;
+
+    com-button {
+      margin-right: 1rem;
+    }
+  }
+}

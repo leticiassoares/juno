@@ -16,11 +16,13 @@ export class CriarCursoComponent implements OnInit {
 
   ngOnInit() {
     this.curso = new FormGroup({
+      idCurso: new FormControl(null),
       nome: new FormControl(null),
       codigo: new FormControl(null),
       disciplina: new FormControl(null),
       codigoCnpq: new FormControl(null),
       descricao: new FormControl(null),
+      observacao: new FormControl(null),
       cargaHoraria: new FormControl(null),
     })
   }

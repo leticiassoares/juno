@@ -1,22 +1,12 @@
-.card {
-  width: 58rem;
-  margin: 1rem;
+.icons {
+  display: flex;
+  justify-content: center;
 
-  .accordion {
-    margin-top: 2rem;
-    width: 50rem;
+  a {
+    margin-right: 1rem;
   }
 
-  .icons {
-    display: flex;
-    justify-content: center;
-
-    a {
-      margin-right: 1rem;
-    }
-
-    a:hover {
-      color: var(--grey);
-    }
+  a:hover {
+    color: var(--grey);
   }
 }

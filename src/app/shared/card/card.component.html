@@ -1,12 +1,10 @@
-<div class="card">
-  <com-card [headerTitle]="curso.nome">
-    <span
-      >{{ curso.descricao }}</span>
+<com-card [headerTitle]="curso.nome">
+  <span
+    >{{ curso.descricao }}</span>
 
-    <div slot="footer" class="icons">
-      <a><com-icon>info</com-icon></a>
-      <a routerLink="/cursos/deletar/{{ curso.idCurso }}"><com-icon>delete</com-icon></a>
-      <a><com-icon>edit</com-icon></a>
-    </div>
-  </com-card>
-</div>
+  <div slot="footer" class="icons">
+    <a><com-icon>info</com-icon></a>
+    <a routerLink="/cursos/deletar/{{ curso.idCurso }}"><com-icon>delete</com-icon></a>
+    <a routerLink="/cursos/editar/{{ curso.idCurso }}"><com-icon>edit</com-icon></a>
+  </div>
+</com-card>

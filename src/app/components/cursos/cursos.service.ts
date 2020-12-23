@@ -16,6 +16,10 @@ export class CursosService {
     return this.http.get(this.baseUrl);
   }
 
+  listarCursoPorID(id: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}${id}`);
+  }
+
   criarCurso(value: any): Observable<any> {
     return this.http.post(this.baseUrl, value);
   }
@@ -25,6 +29,6 @@ export class CursosService {
   }
 
   editarCurso(value: any): Observable<any> {
-    return this.http.put(`${this.baseUrl}`, value);
+    return this.http.put(this.baseUrl, value);
   }
 }
