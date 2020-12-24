@@ -1,0 +1,53 @@
+.banner {
+  height: 50rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.container {
+  padding: 8rem 6rem 8rem 6rem;
+}
+
+.reviews {
+  .review {
+    margin: 5rem;
+    display: flex;
+    align-content: center;
+
+    .img {
+      margin-right: 2rem;
+      height: 20rem;
+      width: 20rem;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.patrocinadores {
+  background-color: var(--light-grey);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      justify-content: center;
+      width: calc(100% / 4);
+      height: calc(100% / 2);
+    }
+  }
+}
