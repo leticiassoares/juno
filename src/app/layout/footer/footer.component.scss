@@ -1,0 +1,23 @@
+.footer {
+  background-color: #234b90;
+
+  .container {
+    padding: 8rem 6rem 8rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .endereco {
+    font-size: 24px;
+  }
+  .social {
+    .list {
+      display: inline-flex;
+
+      li:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

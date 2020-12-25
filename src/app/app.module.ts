@@ -21,6 +21,7 @@ import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoginComponent } from './components/login/login.component';
     NavComponent,
     HomeComponent,
     ContatoComponent,
-    LoginComponent  
+    LoginComponent,
+    FooterComponent  
   ],
   imports: [
     AppRoutingModule,
