@@ -1,15 +1,17 @@
 .container {
-  padding: 3rem 6rem 3rem 6rem;
+  max-width: 1140px;
+  padding: 3rem 0;
+  margin: 0 auto;
   display: block;
 
   .button {
     display: flex;
     justify-content: center;
-    padding: 0rem 0rem 3rem 0rem;
+    margin-bottom: 3rem;
   }
 
   .list {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 

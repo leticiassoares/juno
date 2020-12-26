@@ -1,22 +1,27 @@
-.footer {
+footer {
   background-color: #234b90;
 
   .container {
-    padding: 8rem 6rem 8rem 6rem;
+    max-width: 1140px;
+    padding: 8rem 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    flex-wrap: wrap;
 
-  .endereco {
-    font-size: 24px;
-  }
-  .social {
-    .list {
-      display: inline-flex;
+    .footer-endereco {
+      font-size: 24px;
+      margin: 1rem;
+    }
+    .footer-social {
+      margin: 1rem;
+      ul {
+        display: inline-flex;
 
-      li:not(:last-child) {
-        margin-right: 2rem;
+        li:not(:last-child) {
+          margin-right: 3rem;
+        }
       }
     }
   }

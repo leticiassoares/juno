@@ -9,15 +9,19 @@
 }
 
 .container {
-  padding: 8rem 6rem 8rem 6rem;
+  max-width: 1140px;
+  padding: 8rem 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .reviews {
   .review {
     display: flex;
     align-items: center;
-    margin: 5rem;
-    height: 15rem;
+    margin: 1rem;
 
     .img {
       width: 10%;
@@ -41,6 +45,10 @@
       }
     }
   }
+
+  .review:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 }
 
 .patrocinadores {
@@ -50,12 +58,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 1rem;
 
-    li {
-      display: flex;
-      justify-content: center;
-      width: calc(100% / 4);
-      height: calc(100% / 2);
+    li:not(:nth-child(1n + 5)) {
+      margin-bottom: 5rem;
+    }
+
+    li:not(:nth-child(4n)) {
+      margin-right: calc((100% - (12.4rem * 4)) / 3);
     }
   }
 }
