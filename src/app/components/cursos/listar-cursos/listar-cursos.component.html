@@ -8,9 +8,9 @@
       </a>
   </div>
 
-  <div class="list">
-    <div class="card" *ngFor="let curso of cursos">
+  <ul>
+    <li *ngFor="let curso of cursos">
       <app-card [curso]="curso"></app-card>
-    </div>
-  </div>
+    </li>
+  </ul>
 </div>
