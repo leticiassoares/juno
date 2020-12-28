@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import {
   BreadcrumbModule,
@@ -13,14 +13,14 @@ import {
   SelectModule,
   TextareaModule,
 } from '@cca-fab/cca-fab-components-common';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { NavComponent } from './layout/nav/nav.component';
-import { HeaderComponent } from './layout/header/header.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { LoginComponent } from './components/login/login.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
