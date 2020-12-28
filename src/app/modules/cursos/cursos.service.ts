@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CursosService {
-  baseUrl = 'http://localhost:8080/curso-api/curso/';
+  private baseUrl = 'http://localhost:8080/curso-api/curso/';
 
   constructor(private http: HttpClient) {}
 
