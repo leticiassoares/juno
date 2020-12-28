@@ -21,7 +21,7 @@ const cursosRoutes: Routes = [
   {
     path: 'editar/:id',
     component: EditarCursoComponent,
-  }
+  },
 ];
 
 @NgModule({
