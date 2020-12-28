@@ -1,18 +1,17 @@
-import { CursosService } from './../cursos.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CursosService } from './../../cursos.service';
 
 @Component({
   selector: 'app-criar-curso',
   templateUrl: './criar-curso.component.html',
-  styleUrls: ['./criar-curso.component.scss']
+  styleUrls: ['./criar-curso.component.scss'],
 })
 export class CriarCursoComponent implements OnInit {
+  curso: FormGroup;
 
-  curso!: FormGroup;
-
-  constructor(private service: CursosService, private router: Router) { }
+  constructor(private service: CursosService, private router: Router) {}
 
   ngOnInit() {
     this.curso = new FormGroup({
@@ -24,15 +23,16 @@ export class CriarCursoComponent implements OnInit {
       descricao: new FormControl(null),
       observacao: new FormControl(null),
       cargaHoraria: new FormControl(null),
-    })
+    });
   }
 
   onSubmit() {
-    return this.service.criarCurso(this.curso.value).subscribe(() => this.router.navigate(['/cursos']))
+    return this.service
+      .postCurso(this.curso.value)
+      .subscribe(() => this.router.navigate(['/cursos']));
   }
 
   onCancel() {
     this.router.navigate(['/cursos']);
   }
-
 }

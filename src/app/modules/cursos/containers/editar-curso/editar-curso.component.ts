@@ -1,19 +1,22 @@
-import { CursosService } from './../cursos.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CursosService } from './../../cursos.service';
 
 @Component({
   selector: 'app-editar-curso',
   templateUrl: './editar-curso.component.html',
-  styleUrls: ['./editar-curso.component.scss']
+  styleUrls: ['./editar-curso.component.scss'],
 })
 export class EditarCursoComponent implements OnInit {
+  curso: FormGroup;
+  id: string;
 
-  curso!: FormGroup;
-  id!: string;
-
-  constructor(private service: CursosService, private router: Router, private route: ActivatedRoute) { }
+  constructor(
+    private service: CursosService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     this.curso = new FormGroup({
@@ -27,20 +30,19 @@ export class EditarCursoComponent implements OnInit {
       cargaHoraria: new FormControl(null),
     });
 
-    this.route.params.subscribe(params => this.id = params['id']);
-    this.service.listarCursoPorID(this.id).subscribe(response => {
-      this.curso.patchValue(response)
+    this.route.params.subscribe((params) => (this.id = params['id']));
+    this.service.getCursoById(this.id).subscribe((response) => {
+      this.curso.patchValue(response);
     });
   }
 
   onSubmit() {
-    this.service.editarCurso(this.curso.value).subscribe(() => {
+    this.service.editCurso(this.curso.value).subscribe(() => {
       this.router.navigate(['/cursos']);
     });
   }
 
-   onCancel() {
+  onCancel() {
     this.router.navigate(['/cursos']);
   }
-
 }

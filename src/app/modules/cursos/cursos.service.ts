@@ -3,32 +3,30 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CursosService {
-
   baseUrl = 'http://localhost:8080/curso-api/curso/';
 
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  listarCursos(): Observable<any> {
+  getCursos(): Observable<any> {
     return this.http.get(this.baseUrl);
   }
 
-  listarCursoPorID(id: string): Observable<any> {
+  getCursoById(id: string): Observable<any> {
     return this.http.get(`${this.baseUrl}${id}`);
   }
 
-  criarCurso(value: any): Observable<any> {
+  postCurso(value: any): Observable<any> {
     return this.http.post(this.baseUrl, value);
   }
 
-  deletarCursoPorID(id: string): Observable<any> {
+  deleteCursoById(id: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}${id}`);
   }
 
-  editarCurso(value: any): Observable<any> {
+  editCurso(value: any): Observable<any> {
     return this.http.put(this.baseUrl, value);
   }
 }

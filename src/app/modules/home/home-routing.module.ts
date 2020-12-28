@@ -1,4 +1,4 @@
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './container/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

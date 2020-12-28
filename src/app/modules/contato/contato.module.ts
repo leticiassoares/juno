@@ -10,7 +10,7 @@ import {
 } from '@cca-fab/cca-fab-components-common';
 import { ContatoRoutingModule } from './contato-routing.module';
 
-import { ContatoComponent } from './contato.component';
+import { ContatoComponent } from './container/contato.component';
 
 @NgModule({
   declarations: [ContatoComponent],
