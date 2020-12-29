@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from './../../modules/login/auth.service';
+import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -12,8 +12,8 @@ export class NavComponent implements OnInit {
   constructor(private authservice: AuthService) {}
 
   ngOnInit() {
-    this.authservice.usuarioAutenticado.subscribe(
-      (response) => (this.logged = response)
+    this.authservice.mostrar.subscribe(
+      response => this.logged = response
     );
   }
 }

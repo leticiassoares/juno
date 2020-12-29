@@ -8,7 +8,6 @@ import {
 } from '@cca-fab/cca-fab-components-common';
 import { LoginRoutingModule } from './login-routing.module';
 
-import { AuthService } from './auth.service';
 import { LoginComponent } from './container/login.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { LoginComponent } from './container/login.component';
     InputModule,
     ButtonModule,
     HttpClientModule,
-  ],
-  providers: [AuthService],
+  ]
 })
 export class LoginModule {}

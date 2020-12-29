@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/auth/auth.service';
 import { CursosService } from './../../cursos.service';
 
 @Component({
@@ -8,12 +9,16 @@ import { CursosService } from './../../cursos.service';
 })
 export class ListarCursosComponent implements OnInit {
   cursos = [];
+  logged: boolean;
 
-  constructor(private service: CursosService) {}
+  constructor(private service: CursosService, private authService: AuthService) {}
 
   ngOnInit() {
-    return this.service
+    this.service
       .getCursos()
       .subscribe((response) => (this.cursos = response.content));
-  }
+
+      this.logged = this.authService.isAutenticado();
+
+    }
 }

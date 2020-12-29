@@ -2,7 +2,7 @@
   <ul>
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="cursos">Cursos</a></li>
-    <li><a routerLink="contato">Contato</a></li>
+    <li *ngIf="!logged"><a routerLink="contato">Contato</a></li>
     <li *ngIf="!logged"><a routerLink="login">Login</a></li>
   </ul>
 </nav>

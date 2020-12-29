@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
   selector: 'app-card',
@@ -18,9 +19,12 @@ export class CardComponent implements OnInit {
     cargaHoraria: number;
   };
 
-  constructor() { }
+  logged: boolean;
 
-  ngOnInit(): void {
+  constructor(private authService: AuthService) { }
+
+  ngOnInit() {
+    this.logged = this.authService.isAutenticado();
   }
 
 }

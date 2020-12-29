@@ -3,8 +3,9 @@
     >{{ curso.descricao }}</span>
 
   <div slot="footer" class="icons">
-    <a><com-icon>info</com-icon></a>
-    <a routerLink="/cursos/deletar/{{ curso.idCurso }}"><com-icon>delete</com-icon></a>
-    <a routerLink="/cursos/editar/{{ curso.idCurso }}"><com-icon>edit</com-icon></a>
+    <a *ngIf="!logged">SAIBA MAIS</a>
+    <a *ngIf="logged" routerLink=""><com-icon>info</com-icon></a>
+    <a *ngIf="logged" routerLink="/cursos/deletar/{{ curso.idCurso }}"><com-icon>delete</com-icon></a>
+    <a *ngIf="logged" routerLink="/cursos/editar/{{ curso.idCurso }}"><com-icon>edit</com-icon></a>
   </div>
 </com-card>
