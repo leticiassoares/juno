@@ -10,8 +10,8 @@ import { Usuario } from 'src/app/models/usuario.model';
 export class AuthService {
   private usuarioAutenticado: boolean;
   public mostrar = new EventEmitter<boolean>();
-  private user = 'leticiassoares';
-  private senha = '123456';
+  private user = 'l';
+  private senha = '1';
 
   constructor(private http: HttpClient, private router: Router) {}
 

@@ -13,8 +13,16 @@
     .header-logo {
       margin: 1rem;
 
+      h1 {
+        font-size: 36px;
+        color: var(--lighter-grey);
+        text-transform: uppercase;
+        border: var(--lighter-grey) 2px solid;
+        padding: 1rem;
+      }
+
       img {
-        width: 30%;
+        width: 150px;
       }
     }
 

@@ -10,7 +10,20 @@
 
   <ul>
     <li *ngFor="let curso of cursos">
-      <app-card [curso]="curso"></app-card>
+      <com-card [headerTitle]="curso.nome">
+        <span>{{ curso.descricao }}</span>
+
+        <div slot="footer" class="icons">
+          <a *ngIf="!logged">SAIBA MAIS</a>
+          <a *ngIf="logged" routerLink=""><com-icon>info</com-icon></a>
+          <a *ngIf="logged" routerLink="/cursos/deletar/{{ curso.idCurso }}"
+            ><com-icon>delete</com-icon></a
+          >
+          <a *ngIf="logged" routerLink="/cursos/editar/{{ curso.idCurso }}"
+            ><com-icon>edit</com-icon></a
+          >
+        </div>
+      </com-card>
     </li>
   </ul>
 </div>

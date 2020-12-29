@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CursosService } from './../../cursos.service';
+import { CursosService } from '../../../../services/cursos.service';
 
 @Component({
   selector: 'app-criar-curso',

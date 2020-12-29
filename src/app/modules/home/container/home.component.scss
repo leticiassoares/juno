@@ -60,16 +60,16 @@
 
   ul {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin: 1rem;
+    justify-items: center;
 
-    // li:not(:nth-child(1n + 5)) {
-    //   margin-bottom: 5rem;
-    // }
-
-    // li:not(:nth-child(4n)) {
-    //   margin-right: calc((100% - (12.4rem * 4)) / 3);
-    // }
+    li {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      margin: 4rem 1rem;
+      flex: 1 1 265px;
+      background-color: var(--lighter-grey);
+    }
   }
 }
