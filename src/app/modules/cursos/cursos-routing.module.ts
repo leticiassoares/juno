@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { AuthGuard } from 'src/app/auth/guard/auth.guard';
+import { DetalhesCursoComponent } from './containers/detalhes-curso/detalhes-curso.component';
 import { EditarCursoComponent } from './containers/editar-curso/editar-curso.component';
 import { DeletarCursoComponent } from './containers/deletar-curso/deletar-curso.component';
 import { CriarCursoComponent } from './containers/criar-curso/criar-curso.component';
@@ -11,6 +12,7 @@ const cursosRoutes: Routes = [
     path: '',
     component: ListarCursosComponent,
   },
+  { path: 'detalhes/:id', component: DetalhesCursoComponent },
   {
     path: 'criar',
     component: CriarCursoComponent,

@@ -8,7 +8,7 @@ import { CursosService } from '../../../../services/cursos.service';
   styleUrls: ['./listar-cursos.component.scss'],
 })
 export class ListarCursosComponent implements OnInit {
-  cursos = [];
+  cursos: any;
   logged: boolean;
 
   constructor(

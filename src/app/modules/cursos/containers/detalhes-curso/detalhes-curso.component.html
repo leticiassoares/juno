@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="card">
+    <com-card [headerTitle]="curso.nome">
+      <span>
+        <p>{{ curso.codigoCnpq }}</p>
+        <p>{{ curso.descricao }}</p>
+        <p>{{ curso.disciplina }}</p>
+        <p>{{ curso.cargaHoraria }}</p>
+        <p>{{ curso.observacao }}</p>
+      </span>
+    </com-card>
+    <div class="icons">
+      <a *ngIf="logged" routerLink="/cursos/deletar/{{ curso.idCurso }}"
+        ><com-icon size="3.2" color="#202124">delete</com-icon></a
+      >
+      <a *ngIf="logged" routerLink="/cursos/editar/{{ curso.idCurso }}"
+        ><com-icon size="3.2" color="#202124">edit</com-icon></a
+      >
+    </div>
+  </div>
+</div>
+
+<!-- size="4.8" color="#202124" -->

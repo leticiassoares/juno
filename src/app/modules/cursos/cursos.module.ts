@@ -19,6 +19,7 @@ import { ListarCursosComponent } from './containers/listar-cursos/listar-cursos.
 import { CriarCursoComponent } from './containers/criar-curso/criar-curso.component';
 import { EditarCursoComponent } from './containers/editar-curso/editar-curso.component';
 import { DeletarCursoComponent } from './containers/deletar-curso/deletar-curso.component';
+import { DetalhesCursoComponent } from './containers/detalhes-curso/detalhes-curso.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DeletarCursoComponent } from './containers/deletar-curso/deletar-curso.
     CriarCursoComponent,
     EditarCursoComponent,
     DeletarCursoComponent,
+    DetalhesCursoComponent,
   ],
   imports: [
     CommonModule,
