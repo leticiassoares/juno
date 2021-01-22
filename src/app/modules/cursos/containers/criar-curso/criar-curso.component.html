@@ -1,32 +1,37 @@
-<div class="container">
-    <div class="form">
-        <com-form [formGroup]="curso">
-            <com-form-section block formTitle="Criar Curso">
-            <com-input style="width: 100%" label="Nome do curso" formControlName="nome"></com-input>
-            <com-input style="width: 100%" type="number" label="Código do curso" formControlName="codigo"></com-input>
-            <com-select
-            style="width: 100%"
-            label="Disciplina"
-            formControlName="disciplina"
-            >
-            </com-select>
-            <com-input style="width: 100%" type="number" label="Código CNPQ" formControlName="codigoCnpq"></com-input>
-            <com-textarea style="width: 100%" maxlength="100" placeholder="Digite o Texto" label="Descrição" cols="100" rows="1" formControlName="descricao"></com-textarea>
-            <com-select
-            style="width: 100%"
-            label="Carga horária"
-            formControlName="cargaHoraria"
-            >
-            </com-select>
-            </com-form-section>
-        </com-form>
-        <div class="buttons">
-            <com-button type="submit" (click)="onSubmit()">
-                <ng-container slot="text">Criar</ng-container>
-            </com-button>
-            <com-button flat (click)="onCancel()">
-                <ng-container slot="text">Cancelar</ng-container>
-            </com-button>
-        </div>
+<div class="l-container">
+    <div class="p-fluid">
+      <div class="p-field" >
+        <label for="nome">Nome do curso</label>
+        <input id="nome" type="text" formControlName="nome" pInputText>
+      </div>
+
+      <div class="p-field" >
+        <label for="codigo">Código do curso</label>
+        <input id="codigo" type="text" formControlName="codigo" pInputText>
+      </div>
+
+      <div class="p-field">
+        <p-dropdown [options]="disciplinas" placeholder="Selecione uma disciplina" formControlName="disciplina"></p-dropdown>
+      </div>
+
+      <div class="p-field">
+        <label for="codigoCnpq">Código CNPQ</label>
+        <input id="codigoCnpq" type="text" formControlName="codigoCnpq" pInputText>
+      </div>
+
+      <div class="p-field">
+        <textarea rows="5" cols="30" pInputTextarea autoResize="autoResize" placeholder="Digite o Texto" formControlName="descricao"></textarea>
+      </div>
+
+      <div class="p-field">
+        <p-dropdown [options]="cargasHorarias" placeholder="Selecione uma carga horária" formControlName="cargaHoraria"></p-dropdown>
+      </div>
+
+      <div class="buttons">
+        <p-button label="Criar" (click)="onSubmit()"></p-button>
+        <button pButton pRipple label="Cancelar" class="p-button-outlined" (click)="onCancel()"></button>
+      </div>
     </div>
   </div>
+
+  <!-- [formGroup]="curso" -->

@@ -11,6 +11,8 @@ import { CursosService } from '../../../../services/cursos.service';
 export class EditarCursoComponent implements OnInit {
   curso: FormGroup;
   id: string;
+  disciplinas = ["Biologia", "Física", "Matemática"]
+  cargasHorarias = ["32", "78", "120"]
 
   constructor(
     private service: CursosService,

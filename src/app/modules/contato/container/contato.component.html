@@ -1,31 +1,40 @@
-<div class="container">
-  <div class="form">
-    <com-form>
-      <com-form-section block formTitle="Contato">
-        <com-input style="width: 100%" label="Nome completo"></com-input>
-        <com-input style="width: 100%" label="E-mail"></com-input>
-        <com-textarea
-          style="width: 100%"
-          maxlength="100"
-          placeholder="Digite o Texto"
-          label="Dúvida"
-          cols="100"
-          rows="1"
-        ></com-textarea>
-      </com-form-section>
-      <com-form-section block formTitle="Disponibilidade de horário">
-        <com-label>Preferência para o contato da empresa:</com-label>
-        <com-radio-group formControlName="radioGroup">
-          <com-radio value="Manhã">Manhã</com-radio>
-          <com-radio value="Tarde">Tarde</com-radio>
-          <com-radio value="Noite">Noite</com-radio>
-        </com-radio-group>
-      </com-form-section>
-    </com-form>
+<div class="p-grid p-d-flex p-jc-center l-container">
+  <div class="p-fluid p-col-6">
+    <div class="p-field">
+      <span class="p-float-label">
+        <input type="text" id="nome" pInputText>
+        <label for="nome">Nome Completo</label>
+      </span>
+    </div>
+
+    <div class="p-field">
+      <span class="p-float-label">
+        <input id="email" pInputText>
+        <label for="email">E-mail</label>
+      </span>
+    </div>
+
+    <div class="p-field">
+      <span class="p-float-label">
+        <textarea id="duvida" pInputTextarea></textarea>
+        <label for="duvida">Dúvida</label>
+      </span>
+    </div>
+
+    <div class="p-field-radiobutton">
+      <p-radioButton inputId="manha" value="Manhã"></p-radioButton>
+      <label for="manha">Manhã</label>
+    </div>
+    <div class="p-field-radiobutton">
+      <p-radioButton inputId="tarde" value="Tarde"></p-radioButton>
+      <label for="tarde">Tarde</label>
+    </div>
+    <div class="p-field-radiobutton">
+      <p-radioButton inputId="noite" value="Noite"></p-radioButton>
+      <label for="noite">Noite</label>
+    </div>
     <div class="button">
-      <com-button type="submit" form="formId">
-        <ng-container slot="text">Enviar</ng-container>
-      </com-button>
+      <p-button label="Enviar" type="submit"></p-button>
     </div>
   </div>
 </div>

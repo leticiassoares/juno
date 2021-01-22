@@ -1,75 +1,75 @@
-.banner {
-  height: 50rem;
+// .banner {
+//   height: 50rem;
 
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-}
+//   img {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+//   }
+// }
 
-.container {
-  max-width: 1140px;
-  padding: 8rem 0;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+// .container {
+//   max-width: 1140px;
+//   padding: 8rem 0;
+//   margin: 0 auto;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
 
-.reviews {
-  .review {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 1rem;
-    justify-content: center;
+// .reviews {
+//   .review {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     margin: 1rem;
+//     justify-content: center;
 
-    .img {
-      flex: 1 1 30px;
-      min-width: 100px;
-      max-width: 100px;
-      margin: 0 2rem 2rem;
+//     .img {
+//       flex: 1 1 30px;
+//       min-width: 100px;
+//       max-width: 100px;
+//       margin: 0 2rem 2rem;
 
-      img {
-        border-radius: 50%;
-      }
-    }
+//       img {
+//         border-radius: 50%;
+//       }
+//     }
 
-    .text {
-      flex: 3 1 800px;
+//     .text {
+//       flex: 3 1 800px;
 
-      h2 {
-        font-size: 24px;
-      }
-      h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 1rem;
-      }
-    }
-  }
+//       h2 {
+//         font-size: 24px;
+//       }
+//       h3 {
+//         font-size: 24px;
+//         font-weight: bold;
+//         margin-top: 1rem;
+//       }
+//     }
+//   }
 
-  .review:not(:last-child) {
-    margin-bottom: 5rem;
-  }
-}
+//   .review:not(:last-child) {
+//     margin-bottom: 5rem;
+//   }
+// }
 
-.patrocinadores {
-  background-color: var(--light-grey);
+// .patrocinadores {
+//   background-color: var(--light-grey);
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
+//   ul {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-items: center;
 
-    li {
-      height: 150px;
-      display: flex;
-      justify-content: center;
-      margin: 4rem 1rem;
-      flex: 1 1 265px;
-      background-color: var(--lighter-grey);
-    }
-  }
-}
+//     li {
+//       height: 150px;
+//       display: flex;
+//       justify-content: center;
+//       margin: 4rem 1rem;
+//       flex: 1 1 265px;
+//       background-color: var(--lighter-grey);
+//     }
+//   }
+// }

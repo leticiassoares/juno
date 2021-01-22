@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import {
-  FormModule,
-  InputModule,
-  ButtonModule,
-} from '@cca-fab/cca-fab-components-common';
+import { ButtonModule } from 'primeng/button';
+import { PasswordModule } from 'primeng/password';
 import { LoginRoutingModule } from './login-routing.module';
+import { InputTextModule } from 'primeng/inputtext';
+
 
 import { LoginComponent } from './container/login.component';
 
@@ -15,10 +14,10 @@ import { LoginComponent } from './container/login.component';
   imports: [
     LoginRoutingModule,
     CommonModule,
-    FormModule,
-    InputModule,
-    ButtonModule,
     HttpClientModule,
+    ButtonModule,
+    PasswordModule,
+    InputTextModule
   ]
 })
 export class LoginModule {}

@@ -1,20 +1,18 @@
 footer {
-  background-color: #234b90;
+  background-color: #3F51B5;
 
-  .container {
+  .l-container {
     max-width: 1140px;
     padding: 8rem 0;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 
-    .footer-endereco {
+
+    .l-container__info {
       font-size: 24px;
       margin: 1rem;
     }
-    .footer-social {
+    .l-container__social {
       margin: 1rem;
       ul {
         display: inline-flex;
@@ -24,5 +22,14 @@ footer {
         }
       }
     }
+
+    a {
+      color: black;
+      a:hover {
+        color: #dadce0;
+      }
+    }
   }
 }
+
+

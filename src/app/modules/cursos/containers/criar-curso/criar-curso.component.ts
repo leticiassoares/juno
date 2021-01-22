@@ -10,6 +10,8 @@ import { CursosService } from '../../../../services/cursos.service';
 })
 export class CriarCursoComponent implements OnInit {
   curso: FormGroup;
+  disciplinas = ["Biologia", "Física", "Matemática"]
+  cargasHorarias = ["32", "78", "120"]
 
   constructor(private service: CursosService, private router: Router) {}
 

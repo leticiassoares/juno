@@ -1,33 +1,25 @@
-<div class="container">
-  <div class="button" *ngIf="logged">
-    <a routerLink="criar">
-      <com-button fill>
-        <com-icon slot="icon">add</com-icon>
-        <ng-container slot="text">Criar curso</ng-container>
-      </com-button>
-    </a>
-  </div>
-
-  <ul>
-    <li *ngFor="let curso of cursos">
-      <com-card [headerTitle]="curso.nome">
-        <span>{{ curso.descricao }}</span>
-
-        <div slot="footer" class="icons">
+<div class="p-grid l-container">
+    <div class="p-d-flex p-jc-center l-container__btn">
+      <a routerLink="criar">
+        <p-button icon="pi pi-plus"></p-button>
+      </a>
+    </div>
+    <div class="p-col-4">
+      <p-card [header]="curso.nome" class="p-card-shadow-8" *ngFor="let curso of cursos">
+        <!-- <ng-template pTemplate="header">
+            <img alt="Card" src="assets/showcase/images/usercard.png">
+        </ng-template> -->
+        <p>{{ curso.descricao }}</p>
+        <ng-template pTemplate="footer" *ngIf="!logged">
           <a *ngIf="!logged" routerLink="/cursos/detalhes/{{ curso.idCurso }}"
             >SAIBA MAIS</a
           >
-          <a *ngIf="logged" routerLink="/cursos/detalhes/{{ curso.idCurso }}"
-            ><com-icon>info</com-icon></a
-          >
-          <a *ngIf="logged" routerLink="/cursos/deletar/{{ curso.idCurso }}"
-            ><com-icon>delete</com-icon></a
-          >
-          <a *ngIf="logged" routerLink="/cursos/editar/{{ curso.idCurso }}"
-            ><com-icon>edit</com-icon></a
-          >
-        </div>
-      </com-card>
-    </li>
-  </ul>
+        </ng-template>
+        <ng-template pTemplate="footer" *ngIf="logged">
+          <a routerLink="detalhes/{{ curso.idCurso }}"><button pButton pRipple icon="pi-eye" class="p-button-rounded"></button></a>
+          <a routerLink="editar/{{ curso.idCurso }}"><button pButton pRipple icon="pi-pencil" class="p-button-rounded"></button></a>
+          <a routerLink="deletar/{{ curso.idCurso }}"><button pButton pRipple icon="pi-trash" class="p-button-rounded"></button></a>
+        </ng-template>
+      </p-card>
+    </div>
 </div>

@@ -2,17 +2,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import {
-  ButtonModule,
-  CardModule,
-  FormModule,
-  IconModule,
-  InputModule,
-  ModalModule,
-  SelectModule,
-  TextareaModule,
-} from '@cca-fab/cca-fab-components-common';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { DropdownModule } from 'primeng/dropdown';
 import { CursosRoutingModule } from './cursos-routing.module';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FieldsetModule } from 'primeng/fieldset';
+import { DividerModule } from 'primeng/divider';
 
 import { CursosService } from '../../services/cursos.service';
 import { ListarCursosComponent } from './containers/listar-cursos/listar-cursos.component';
@@ -33,15 +29,13 @@ import { DetalhesCursoComponent } from './containers/detalhes-curso/detalhes-cur
     CommonModule,
     RouterModule,
     CursosRoutingModule,
-    IconModule,
-    ButtonModule,
-    SelectModule,
-    CardModule,
-    FormModule,
-    ModalModule,
-    InputModule,
-    TextareaModule,
     HttpClientModule,
+    CardModule,
+    ButtonModule,
+    DropdownModule,
+    InputTextareaModule,
+    FieldsetModule,
+    DividerModule
   ],
   providers: [CursosService],
 })
