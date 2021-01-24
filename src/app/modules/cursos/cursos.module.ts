@@ -9,6 +9,7 @@ import { CursosRoutingModule } from './cursos-routing.module';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { FieldsetModule } from 'primeng/fieldset';
 import { DividerModule } from 'primeng/divider';
+import { InputTextModule } from 'primeng/inputtext';
 
 import { CursosService } from '../../services/cursos.service';
 import { ListarCursosComponent } from './containers/listar-cursos/listar-cursos.component';
@@ -16,6 +17,7 @@ import { CriarCursoComponent } from './containers/criar-curso/criar-curso.compon
 import { EditarCursoComponent } from './containers/editar-curso/editar-curso.component';
 import { DeletarCursoComponent } from './containers/deletar-curso/deletar-curso.component';
 import { DetalhesCursoComponent } from './containers/detalhes-curso/detalhes-curso.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,12 @@ import { DetalhesCursoComponent } from './containers/detalhes-curso/detalhes-cur
     CardModule,
     ButtonModule,
     DropdownModule,
+    InputTextModule,
     InputTextareaModule,
     FieldsetModule,
-    DividerModule
+    DividerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [CursosService],
 })

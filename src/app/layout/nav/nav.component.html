@@ -1,8 +1,10 @@
 <nav>
-  <ul>
+  <ul class="p-d-flex l-navbar">
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="cursos">Cursos</a></li>
-    <li *ngIf="!logged"><a routerLink="contato">Contato</a></li>
-    <li *ngIf="!logged"><a routerLink="login">Login</a></li>
+    <ng-container *ngIf="!logged">
+      <li><a routerLink="contato">Contato</a></li>
+      <li ><a routerLink="login">Login</a></li>
+    </ng-container>
   </ul>
 </nav>

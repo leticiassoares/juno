@@ -8,6 +8,7 @@ import { InputTextModule } from 'primeng/inputtext';
 
 
 import { LoginComponent } from './container/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -17,7 +18,9 @@ import { LoginComponent } from './container/login.component';
     HttpClientModule,
     ButtonModule,
     PasswordModule,
-    InputTextModule
+    InputTextModule, 
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class LoginModule {}

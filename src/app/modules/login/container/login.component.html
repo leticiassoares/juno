@@ -1,21 +1,25 @@
 <div class="p-grid p-d-flex p-jc-center l-container">
-  <div class="p-fluid p-col-3">
+  <form class="p-fluid p-col-3" [formGroup]="form">
+
     <div class="p-field">
       <span class="p-float-label">
-        <input id="usuario" type="text" pInputText>
+        <input id="usuario" type="text" pInputText formControlName="user">
         <label for="usuario">Usuário</label>
       </span>
     </div>
+
     <div class="p-field">
       <span class="p-float-label">
-        <input id="senha" type="password" pPassword>
+        <input id="senha" type="password" pPassword formControlName="senha">
         <label for="senha">Senha</label>
       </span>
     </div>
-    <div class="button">
-      <p-button label="Enviar" (click)="onSubmit()"></p-button>
+
+    <div class="l-btn">
+      <p-button label="Entrar" (click)="onSubmit()"></p-button>
     </div>
-  </div>
+    
+  </form>
 </div>
 
 

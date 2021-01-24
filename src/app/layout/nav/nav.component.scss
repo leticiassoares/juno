@@ -1,22 +1,19 @@
-nav {
-  ul {
-    font-size: 16px;
+.l-navbar {
+  font-size: 16px;
 
-    li {
-      display: inline;
-      text-transform: uppercase;
-    }
+  li {
+    text-transform: uppercase;
 
-    li:not(:last-child) {
+    &:not(:last-child) {
       margin-right: 3rem;
     }
+  }
 
-    a {
-      color: #f1f4f8;
-    }
+  a {
+    color: #f1f4f8;
+  }
 
-    a:hover {
-      color: #dadce0;
-    }
+  a:hover {
+    color: #dadce0;
   }
 }

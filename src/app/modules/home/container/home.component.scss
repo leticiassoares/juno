@@ -1,75 +1,51 @@
-// .banner {
-//   height: 50rem;
+.l-banner {
+  height: 50rem;
 
-//   img {
-//     height: 100%;
-//     width: 100%;
-//     object-fit: cover;
-//   }
-// }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 
-// .container {
-//   max-width: 1140px;
-//   padding: 8rem 0;
-//   margin: 0 auto;
-//   justify-content: center;
-//   align-items: center;
-//   flex-wrap: wrap;
-// }
+.l-container {
+  max-width: 1140px;
+  padding: 8rem 0;
+  margin: 0 auto;
 
-// .reviews {
-//   .review {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     margin: 1rem;
-//     justify-content: center;
+  .l-container__review {
+    .l-container__img {
+      margin: 0 2rem 0 0;
+    }
 
-//     .img {
-//       flex: 1 1 30px;
-//       min-width: 100px;
-//       max-width: 100px;
-//       margin: 0 2rem 2rem;
+    .l-container__text {
+      h2 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+    }
 
-//       img {
-//         border-radius: 50%;
-//       }
-//     }
+    img {
+      min-width: 100px;
+      max-width: 100px;
+      border-radius: 50%;
+    }
+  }
 
-//     .text {
-//       flex: 3 1 800px;
+  .l-container__review:not(:last-child) {
+    margin: 0 0 3rem 0;
+  }
+}
 
-//       h2 {
-//         font-size: 24px;
-//       }
-//       h3 {
-//         font-size: 24px;
-//         font-weight: bold;
-//         margin-top: 1rem;
-//       }
-//     }
-//   }
+.l-light-section {
+  background-color: #f1f4f8;
+}
 
-//   .review:not(:last-child) {
-//     margin-bottom: 5rem;
-//   }
-// }
-
-// .patrocinadores {
-//   background-color: var(--light-grey);
-
-//   ul {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-items: center;
-
-//     li {
-//       height: 150px;
-//       display: flex;
-//       justify-content: center;
-//       margin: 4rem 1rem;
-//       flex: 1 1 265px;
-//       background-color: var(--lighter-grey);
-//     }
-//   }
-// }
+.l-dark-section {
+  background-color: #dadce0;
+}

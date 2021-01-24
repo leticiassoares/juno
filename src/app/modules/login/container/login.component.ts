@@ -10,18 +10,18 @@ import { AuthService } from 'src/app/auth/auth.service';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  usuarioLogado: FormGroup;
+  form: FormGroup;
 
   constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit() {
-    this.usuarioLogado = new FormGroup({
+    this.form = new FormGroup({
       user: new FormControl(null),
       senha: new FormControl(null),
     });
   }
 
   onSubmit() {
-    this.authService.logar(this.usuarioLogado.value);
+    this.authService.logar(this.form.value);
   }
 }

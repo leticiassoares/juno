@@ -1,19 +1,15 @@
 footer {
-  background-color: #3F51B5;
+  background-color: #3f51b5;
 
   .l-container {
     max-width: 1140px;
     padding: 8rem 0;
     margin: 0 auto;
-    display: flex;
-
 
     .l-container__info {
       font-size: 24px;
-      margin: 1rem;
     }
     .l-container__social {
-      margin: 1rem;
       ul {
         display: inline-flex;
 
@@ -31,5 +27,3 @@ footer {
     }
   }
 }
-
-

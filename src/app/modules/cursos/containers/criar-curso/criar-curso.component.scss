@@ -1,22 +1,9 @@
-.container {
+.l-container {
   max-width: 1140px;
   padding: 3rem 0;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  .form {
-    width: 80%;
-    margin: 1rem;
-  }
-
-  .buttons {
-    display: flex;
+  .l-btn {
     margin-top: 2rem;
-
-    com-button:not(:last-child) {
-      margin-right: 1rem;
-    }
   }
 }
