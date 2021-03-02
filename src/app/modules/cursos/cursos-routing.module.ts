@@ -1,3 +1,4 @@
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { AuthGuard } from 'src/app/auth/guard/auth.guard';
@@ -8,6 +9,10 @@ import { CriarCursoComponent } from './containers/criar-curso/criar-curso.compon
 import { ListarCursosComponent } from './containers/listar-cursos/listar-cursos.component';
 
 const cursosRoutes: Routes = [
+ {
+    path: 'pesquisa',
+    component: PesquisaComponent,
+  },
   {
     path: '',
     component: ListarCursosComponent,

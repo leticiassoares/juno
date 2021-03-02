@@ -18,6 +18,8 @@ import { EditarCursoComponent } from './containers/editar-curso/editar-curso.com
 import { DeletarCursoComponent } from './containers/deletar-curso/deletar-curso.component';
 import { DetalhesCursoComponent } from './containers/detalhes-curso/detalhes-curso.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import { CalendarModule } from 'primeng/calendar';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EditarCursoComponent,
     DeletarCursoComponent,
     DetalhesCursoComponent,
+    PesquisaComponent
   ],
   imports: [
     CommonModule,
@@ -35,6 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CardModule,
     ButtonModule,
     DropdownModule,
+    CalendarModule,
     InputTextModule,
     InputTextareaModule,
     FieldsetModule,
